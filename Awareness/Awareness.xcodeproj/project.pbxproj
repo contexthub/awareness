@@ -19,6 +19,10 @@
 		1F6A759219A23EE60002214F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757A19A23EE60002214F /* UIKit.framework */; };
 		1F6A759A19A23EE70002214F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A759819A23EE70002214F /* InfoPlist.strings */; };
 		1F6A759C19A23EE70002214F /* AwarenessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A759B19A23EE70002214F /* AwarenessTests.m */; };
+		1F6A75A619A243A80002214F /* ContextHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A75A519A243A80002214F /* ContextHub.framework */; };
+		1F6A75AA19A243AE0002214F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A75A719A243AE0002214F /* LICENSE */; };
+		1F6A75AB19A243AE0002214F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A75A819A243AE0002214F /* README.md */; };
+		1F6A75AC19A243AE0002214F /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A75A919A243AE0002214F /* release_notes.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		1F6A759719A23EE70002214F /* AwarenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwarenessTests-Info.plist"; sourceTree = "<group>"; };
 		1F6A759919A23EE70002214F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F6A759B19A23EE70002214F /* AwarenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwarenessTests.m; sourceTree = "<group>"; };
+		1F6A75A519A243A80002214F /* ContextHub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContextHub.framework; path = ../ContextHub.framework; sourceTree = "<group>"; };
+		1F6A75A719A243AE0002214F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1F6A75A819A243AE0002214F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1F6A75A919A243AE0002214F /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = release_notes.md; path = ../release_notes.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6A75A619A243A80002214F /* ContextHub.framework in Frameworks */,
 				1F6A757919A23EE60002214F /* CoreGraphics.framework in Frameworks */,
 				1F6A757B19A23EE60002214F /* UIKit.framework in Frameworks */,
 				1F6A757719A23EE60002214F /* Foundation.framework in Frameworks */,
@@ -79,8 +88,12 @@
 			children = (
 				1F6A757C19A23EE60002214F /* Awareness */,
 				1F6A759519A23EE60002214F /* AwarenessTests */,
+				1F6A75AD19A2486C0002214F /* Contexts */,
 				1F6A757519A23EE60002214F /* Frameworks */,
 				1F6A757419A23EE60002214F /* Products */,
+				1F6A75A819A243AE0002214F /* README.md */,
+				1F6A75A919A243AE0002214F /* release_notes.md */,
+				1F6A75A719A243AE0002214F /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +109,7 @@
 		1F6A757519A23EE60002214F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F6A75A519A243A80002214F /* ContextHub.framework */,
 				1F6A757619A23EE60002214F /* Foundation.framework */,
 				1F6A757819A23EE60002214F /* CoreGraphics.framework */,
 				1F6A757A19A23EE60002214F /* UIKit.framework */,
@@ -144,6 +158,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1F6A75AD19A2486C0002214F /* Contexts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Contexts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +174,7 @@
 			buildPhases = (
 				1F6A756F19A23EE60002214F /* Sources */,
 				1F6A757019A23EE60002214F /* Frameworks */,
+				1F6A75AE19A2492E0002214F /* ShellScript */,
 				1F6A757119A23EE60002214F /* Resources */,
 			);
 			buildRules = (
@@ -220,8 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6A75AA19A243AE0002214F /* LICENSE in Resources */,
 				1F6A758119A23EE60002214F /* InfoPlist.strings in Resources */,
+				1F6A75AB19A243AE0002214F /* README.md in Resources */,
 				1F6A758919A23EE60002214F /* Images.xcassets in Resources */,
+				1F6A75AC19A243AE0002214F /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +259,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F6A75AE19A2492E0002214F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F6A756F19A23EE60002214F /* Sources */ = {
@@ -360,6 +401,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Jeff/Documents/Development/ChaiOne/ContextHub/Samples/awareness,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Awareness/Awareness-Prefix.pch";
 				INFOPLIST_FILE = "Awareness/Awareness-Info.plist";
@@ -373,6 +418,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Jeff/Documents/Development/ChaiOne/ContextHub/Samples/awareness,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Awareness/Awareness-Prefix.pch";
 				INFOPLIST_FILE = "Awareness/Awareness-Info.plist";
