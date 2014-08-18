@@ -31,18 +31,18 @@ The Awareness sample app introduces you to the contextual rule features of the C
 
 ## Usage
 
-## Working with Events
+##### Working with Events
 
-## Working with Console
+##### Working with Console
 
-## Working with Beacons
+##### Working with Beacons
 
-## Working with Geofences
+##### Working with Geofences
 
-## Working with Vault
+##### Working with Vault
 
-## Working with Push
+##### Working with Push
 
-## Working with HTTP
+##### Working with HTTP
 
 ## Final Words
