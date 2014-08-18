@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F52B86519A24C4D00B9C7CA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86219A24C4D00B9C7CA /* LICENSE */; };
+		1F52B86619A24C4D00B9C7CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86319A24C4D00B9C7CA /* README.md */; };
+		1F52B86719A24C4D00B9C7CA /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86419A24C4D00B9C7CA /* release_notes.md */; };
+		1F52B86919A24C5900B9C7CA /* ContextHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F52B86819A24C5900B9C7CA /* ContextHub.framework */; };
 		1F6A757719A23EE60002214F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757619A23EE60002214F /* Foundation.framework */; };
 		1F6A757919A23EE60002214F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757819A23EE60002214F /* CoreGraphics.framework */; };
 		1F6A757B19A23EE60002214F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757A19A23EE60002214F /* UIKit.framework */; };
@@ -19,10 +23,6 @@
 		1F6A759219A23EE60002214F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757A19A23EE60002214F /* UIKit.framework */; };
 		1F6A759A19A23EE70002214F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A759819A23EE70002214F /* InfoPlist.strings */; };
 		1F6A759C19A23EE70002214F /* AwarenessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A759B19A23EE70002214F /* AwarenessTests.m */; };
-		1F6A75A619A243A80002214F /* ContextHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A75A519A243A80002214F /* ContextHub.framework */; };
-		1F6A75AA19A243AE0002214F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A75A719A243AE0002214F /* LICENSE */; };
-		1F6A75AB19A243AE0002214F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A75A819A243AE0002214F /* README.md */; };
-		1F6A75AC19A243AE0002214F /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A75A919A243AE0002214F /* release_notes.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F52B86219A24C4D00B9C7CA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1F52B86319A24C4D00B9C7CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1F52B86419A24C4D00B9C7CA /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		1F52B86819A24C5900B9C7CA /* ContextHub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextHub.framework; sourceTree = "<group>"; };
 		1F6A757319A23EE60002214F /* Awareness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Awareness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6A757619A23EE60002214F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F6A757819A23EE60002214F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,10 +56,6 @@
 		1F6A759719A23EE70002214F /* AwarenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwarenessTests-Info.plist"; sourceTree = "<group>"; };
 		1F6A759919A23EE70002214F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F6A759B19A23EE70002214F /* AwarenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwarenessTests.m; sourceTree = "<group>"; };
-		1F6A75A519A243A80002214F /* ContextHub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContextHub.framework; path = ../ContextHub.framework; sourceTree = "<group>"; };
-		1F6A75A719A243AE0002214F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1F6A75A819A243AE0002214F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		1F6A75A919A243AE0002214F /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = release_notes.md; path = ../release_notes.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F6A75A619A243A80002214F /* ContextHub.framework in Frameworks */,
+				1F52B86919A24C5900B9C7CA /* ContextHub.framework in Frameworks */,
 				1F6A757919A23EE60002214F /* CoreGraphics.framework in Frameworks */,
 				1F6A757B19A23EE60002214F /* UIKit.framework in Frameworks */,
 				1F6A757719A23EE60002214F /* Foundation.framework in Frameworks */,
@@ -91,9 +91,9 @@
 				1F6A75AD19A2486C0002214F /* Contexts */,
 				1F6A757519A23EE60002214F /* Frameworks */,
 				1F6A757419A23EE60002214F /* Products */,
-				1F6A75A819A243AE0002214F /* README.md */,
-				1F6A75A919A243AE0002214F /* release_notes.md */,
-				1F6A75A719A243AE0002214F /* LICENSE */,
+				1F52B86319A24C4D00B9C7CA /* README.md */,
+				1F52B86419A24C4D00B9C7CA /* release_notes.md */,
+				1F52B86219A24C4D00B9C7CA /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,9 +109,9 @@
 		1F6A757519A23EE60002214F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F6A75A519A243A80002214F /* ContextHub.framework */,
-				1F6A757619A23EE60002214F /* Foundation.framework */,
+				1F52B86819A24C5900B9C7CA /* ContextHub.framework */,
 				1F6A757819A23EE60002214F /* CoreGraphics.framework */,
+				1F6A757619A23EE60002214F /* Foundation.framework */,
 				1F6A757A19A23EE60002214F /* UIKit.framework */,
 				1F6A758F19A23EE60002214F /* XCTest.framework */,
 			);
@@ -242,11 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F6A75AA19A243AE0002214F /* LICENSE in Resources */,
+				1F52B86519A24C4D00B9C7CA /* LICENSE in Resources */,
 				1F6A758119A23EE60002214F /* InfoPlist.strings in Resources */,
-				1F6A75AB19A243AE0002214F /* README.md in Resources */,
+				1F52B86619A24C4D00B9C7CA /* README.md in Resources */,
 				1F6A758919A23EE60002214F /* Images.xcassets in Resources */,
-				1F6A75AC19A243AE0002214F /* release_notes.md in Resources */,
+				1F52B86719A24C4D00B9C7CA /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +404,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Jeff/Documents/Development/ChaiOne/ContextHub/Samples/awareness,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Awareness/Awareness-Prefix.pch";
@@ -421,6 +422,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Jeff/Documents/Development/ChaiOne/ContextHub/Samples/awareness,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Awareness/Awareness-Prefix.pch";
@@ -489,6 +491,7 @@
 				1F6A75A119A23EE70002214F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6A75A219A23EE70002214F /* Build configuration list for PBXNativeTarget "AwarenessTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +500,7 @@
 				1F6A75A419A23EE70002214F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
