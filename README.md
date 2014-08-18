@@ -1,6 +1,7 @@
 # Awareness (Context Rule) Sample app
 
-The Awareness sample app introduces you to the contextual engine features of the ContextHub Developer Portal.
+The Awareness sample app introduces you to the contextual rule features of the ContextHub Developer Portal.
+
 ### Table of Contents
 
 1. **[Purpose](#purpose)**
