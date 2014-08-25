@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AWNContextObjectTableViewController : UITableViewController
+@interface AWNContextObjectTableViewController : UITableViewController <UIAlertViewDelegate>
 
 @end

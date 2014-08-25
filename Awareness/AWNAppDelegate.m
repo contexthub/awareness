@@ -26,7 +26,7 @@
 #endif
     
     //Register the app id of the application you created on https://app.contexthub.com
-    //[ContextHub registerWithAppId:@"YOUR-AWARENESS-APP-ID-HERE"];
+    [ContextHub registerWithAppId:@"YOUR-AWARENESS-APP-ID-HERE"];
     
     // Register for remote notifications
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound ];

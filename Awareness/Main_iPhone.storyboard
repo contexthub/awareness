@@ -15,27 +15,37 @@
                         <sections>
                             <tableViewSection headerTitle="Basic" id="Mvp-lG-Edy">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="0BO-D9-i9o" detailTextLabel="5EF-eU-Oa9" style="IBUITableViewCellStyleSubtitle" id="0pA-qt-RQH">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0pA-qt-RQH">
                                         <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0pA-qt-RQH" id="ndz-nI-bzl">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Console" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0BO-D9-i9o">
-                                                    <rect key="frame" x="15" y="3" width="56" height="21"/>
+                                                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="Console" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5X-D9-Zmb">
+                                                    <rect key="frame" x="15" y="3" width="141" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Log messages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5EF-eU-Oa9">
-                                                    <rect key="frame" x="15" y="24" width="77" height="17"/>
+                                                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="Log messages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gaz-6I-Y4i">
+                                                    <rect key="frame" x="15" y="24" width="141" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smK-Lw-UxI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="consoleRowTapped:" destination="HFv-KW-d3S" eventType="touchUpInside" id="6MV-tV-FQL"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -426,7 +436,7 @@
         <scene sceneID="Wli-69-7Sm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tKN-IV-ser" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Objects" image="EventTabBarIcon" id="Hjq-yP-ZGA"/>
+                    <tabBarItem key="tabBarItem" title="Objects" image="ObjectTabBarIcon" id="Hjq-yP-ZGA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="apQ-Go-q29">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -460,10 +470,10 @@
             </objects>
             <point key="canvasLocation" x="695" y="754"/>
         </scene>
-        <!--Beacon Object Table View Controller - Geofence-->
+        <!--Geofence Object Table View Controller - Geofence-->
         <scene sceneID="VQE-Mw-f7R">
             <objects>
-                <tableViewController id="BaZ-8J-QjW" customClass="AWNBeaconObjectTableViewController" sceneMemberID="viewController">
+                <tableViewController id="BaZ-8J-QjW" customClass="AWNGeofenceObjectTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="inf-uo-bn5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -608,7 +618,7 @@
     </scenes>
     <resources>
         <image name="AboutTabBarIcon" width="28" height="28"/>
-        <image name="EventTabBarIcon" width="28" height="28"/>
+        <image name="ObjectTabBarIcon" width="28" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
