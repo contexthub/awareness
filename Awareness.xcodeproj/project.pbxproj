@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1BC48D19A28A7900C70582 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1BC48C19A28A7900C70582 /* Main_iPhone.storyboard */; };
 		1F52B86519A24C4D00B9C7CA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86219A24C4D00B9C7CA /* LICENSE */; };
 		1F52B86619A24C4D00B9C7CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86319A24C4D00B9C7CA /* README.md */; };
 		1F52B86719A24C4D00B9C7CA /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86419A24C4D00B9C7CA /* release_notes.md */; };
@@ -23,6 +24,14 @@
 		1F6A759219A23EE60002214F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757A19A23EE60002214F /* UIKit.framework */; };
 		1F6A759A19A23EE70002214F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A759819A23EE70002214F /* InfoPlist.strings */; };
 		1F6A759C19A23EE70002214F /* AwarenessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A759B19A23EE70002214F /* AwarenessTests.m */; };
+		1FCA7D0419AB662900EDD2C5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA7D0319AB662900EDD2C5 /* CoreMotion.framework */; };
+		1FCA7D0619AB663100EDD2C5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA7D0519AB663100EDD2C5 /* MobileCoreServices.framework */; };
+		1FCA7D0819AB663700EDD2C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA7D0719AB663700EDD2C5 /* CoreLocation.framework */; };
+		1FCA7D0E19AB672500EDD2C5 /* AWNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D0D19AB672500EDD2C5 /* AWNTabBarController.m */; };
+		1FCA7D1319AB672D00EDD2C5 /* AWNAboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1019AB672D00EDD2C5 /* AWNAboutTableViewController.m */; };
+		1FCA7D1419AB672D00EDD2C5 /* AWNContextObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1219AB672D00EDD2C5 /* AWNContextObjectTableViewController.m */; };
+		1FCA7D1819AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1719AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m */; };
+		1FCA7D1E19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1C19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +45,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F1BC48B19A289D300C70582 /* AWNConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWNConstants.h; sourceTree = "<group>"; };
+		1F1BC48C19A28A7900C70582 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		1F52B86219A24C4D00B9C7CA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1F52B86319A24C4D00B9C7CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1F52B86419A24C4D00B9C7CA /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		1F52B86819A24C5900B9C7CA /* ContextHub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextHub.framework; sourceTree = "<group>"; };
+		1F52B86A19A24FE900B9C7CA /* beacon_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = beacon_context.js; path = Contexts/beacon_context.js; sourceTree = "<group>"; };
+		1F52B86B19A24FE900B9C7CA /* console_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = console_context.js; path = Contexts/console_context.js; sourceTree = "<group>"; };
+		1F52B86C19A24FE900B9C7CA /* event_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = event_context.js; path = Contexts/event_context.js; sourceTree = "<group>"; };
+		1F52B86D19A24FE900B9C7CA /* geofence_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = geofence_context.js; path = Contexts/geofence_context.js; sourceTree = "<group>"; };
+		1F52B86E19A24FE900B9C7CA /* http_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = http_context.js; path = Contexts/http_context.js; sourceTree = "<group>"; };
+		1F52B86F19A24FE900B9C7CA /* push_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = push_context.js; path = Contexts/push_context.js; sourceTree = "<group>"; };
+		1F52B87019A24FE900B9C7CA /* vault_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = vault_context.js; path = Contexts/vault_context.js; sourceTree = "<group>"; };
 		1F6A757319A23EE60002214F /* Awareness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Awareness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6A757619A23EE60002214F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F6A757819A23EE60002214F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +74,19 @@
 		1F6A759719A23EE70002214F /* AwarenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwarenessTests-Info.plist"; sourceTree = "<group>"; };
 		1F6A759919A23EE70002214F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F6A759B19A23EE70002214F /* AwarenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwarenessTests.m; sourceTree = "<group>"; };
+		1FCA7D0319AB662900EDD2C5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1FCA7D0519AB663100EDD2C5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1FCA7D0719AB663700EDD2C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1FCA7D0C19AB672500EDD2C5 /* AWNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNTabBarController.h; path = "View Controllers/AWNTabBarController.h"; sourceTree = "<group>"; };
+		1FCA7D0D19AB672500EDD2C5 /* AWNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNTabBarController.m; path = "View Controllers/AWNTabBarController.m"; sourceTree = "<group>"; };
+		1FCA7D0F19AB672D00EDD2C5 /* AWNAboutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNAboutTableViewController.h; path = "View Controllers/Tabs/AWNAboutTableViewController.h"; sourceTree = "<group>"; };
+		1FCA7D1019AB672D00EDD2C5 /* AWNAboutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNAboutTableViewController.m; path = "View Controllers/Tabs/AWNAboutTableViewController.m"; sourceTree = "<group>"; };
+		1FCA7D1119AB672D00EDD2C5 /* AWNContextObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNContextObjectTableViewController.h; path = "View Controllers/Tabs/AWNContextObjectTableViewController.h"; sourceTree = "<group>"; };
+		1FCA7D1219AB672D00EDD2C5 /* AWNContextObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNContextObjectTableViewController.m; path = "View Controllers/Tabs/AWNContextObjectTableViewController.m"; sourceTree = "<group>"; };
+		1FCA7D1619AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNBeaconObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNBeaconObjectTableViewController.h"; sourceTree = "<group>"; };
+		1FCA7D1719AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNBeaconObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNBeaconObjectTableViewController.m"; sourceTree = "<group>"; };
+		1FCA7D1C19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNGeofenceObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNGeofenceObjectTableViewController.m"; sourceTree = "<group>"; };
+		1FCA7D1D19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNGeofenceObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNGeofenceObjectTableViewController.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCA7D0819AB663700EDD2C5 /* CoreLocation.framework in Frameworks */,
+				1FCA7D0619AB663100EDD2C5 /* MobileCoreServices.framework in Frameworks */,
+				1FCA7D0419AB662900EDD2C5 /* CoreMotion.framework in Frameworks */,
 				1F52B86919A24C5900B9C7CA /* ContextHub.framework in Frameworks */,
 				1F6A757919A23EE60002214F /* CoreGraphics.framework in Frameworks */,
 				1F6A757B19A23EE60002214F /* UIKit.framework in Frameworks */,
@@ -83,6 +117,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1BC48E19A28AA100C70582 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA7D0B19AB671C00EDD2C5 /* Tabs */,
+				1FCA7D0C19AB672500EDD2C5 /* AWNTabBarController.h */,
+				1FCA7D0D19AB672500EDD2C5 /* AWNTabBarController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		1F6A756A19A23EE60002214F = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +155,10 @@
 			children = (
 				1F52B86819A24C5900B9C7CA /* ContextHub.framework */,
 				1F6A757819A23EE60002214F /* CoreGraphics.framework */,
+				1FCA7D0719AB663700EDD2C5 /* CoreLocation.framework */,
+				1FCA7D0319AB662900EDD2C5 /* CoreMotion.framework */,
 				1F6A757619A23EE60002214F /* Foundation.framework */,
+				1FCA7D0519AB663100EDD2C5 /* MobileCoreServices.framework */,
 				1F6A757A19A23EE60002214F /* UIKit.framework */,
 				1F6A758F19A23EE60002214F /* XCTest.framework */,
 			);
@@ -121,10 +168,15 @@
 		1F6A757C19A23EE60002214F /* Awareness */ = {
 			isa = PBXGroup;
 			children = (
+				1FCA7D0A19AB664A00EDD2C5 /* Models */,
+				1FCA7D0919AB664500EDD2C5 /* Views */,
+				1F1BC48E19A28AA100C70582 /* View Controllers */,
 				1F6A758519A23EE60002214F /* AWNAppDelegate.h */,
 				1F6A758619A23EE60002214F /* AWNAppDelegate.m */,
+				1F1BC48B19A289D300C70582 /* AWNConstants.h */,
 				1F6A758819A23EE60002214F /* Images.xcassets */,
 				1F6A757D19A23EE60002214F /* Supporting Files */,
+				1F1BC48C19A28A7900C70582 /* Main_iPhone.storyboard */,
 			);
 			path = Awareness;
 			sourceTree = "<group>";
@@ -161,8 +213,52 @@
 		1F6A75AD19A2486C0002214F /* Contexts */ = {
 			isa = PBXGroup;
 			children = (
+				1F52B86A19A24FE900B9C7CA /* beacon_context.js */,
+				1F52B86B19A24FE900B9C7CA /* console_context.js */,
+				1F52B86C19A24FE900B9C7CA /* event_context.js */,
+				1F52B86D19A24FE900B9C7CA /* geofence_context.js */,
+				1F52B86E19A24FE900B9C7CA /* http_context.js */,
+				1F52B86F19A24FE900B9C7CA /* push_context.js */,
+				1F52B87019A24FE900B9C7CA /* vault_context.js */,
 			);
 			name = Contexts;
+			sourceTree = "<group>";
+		};
+		1FCA7D0919AB664500EDD2C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1FCA7D0A19AB664A00EDD2C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1FCA7D0B19AB671C00EDD2C5 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA7D1519AB75E000EDD2C5 /* Context Objects */,
+				1FCA7D0F19AB672D00EDD2C5 /* AWNAboutTableViewController.h */,
+				1FCA7D1019AB672D00EDD2C5 /* AWNAboutTableViewController.m */,
+				1FCA7D1119AB672D00EDD2C5 /* AWNContextObjectTableViewController.h */,
+				1FCA7D1219AB672D00EDD2C5 /* AWNContextObjectTableViewController.m */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		1FCA7D1519AB75E000EDD2C5 /* Context Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA7D1619AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.h */,
+				1FCA7D1719AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m */,
+				1FCA7D1D19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.h */,
+				1FCA7D1C19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m */,
+			);
+			name = "Context Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +310,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = ChaiOne;
 				TargetAttributes = {
+					1F6A757219A23EE60002214F = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					1F6A758D19A23EE60002214F = {
 						TestTargetID = 1F6A757219A23EE60002214F;
 					};
@@ -244,6 +347,7 @@
 			files = (
 				1F52B86519A24C4D00B9C7CA /* LICENSE in Resources */,
 				1F6A758119A23EE60002214F /* InfoPlist.strings in Resources */,
+				1F1BC48D19A28A7900C70582 /* Main_iPhone.storyboard in Resources */,
 				1F52B86619A24C4D00B9C7CA /* README.md in Resources */,
 				1F6A758919A23EE60002214F /* Images.xcassets in Resources */,
 				1F52B86719A24C4D00B9C7CA /* release_notes.md in Resources */,
@@ -281,8 +385,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCA7D1319AB672D00EDD2C5 /* AWNAboutTableViewController.m in Sources */,
+				1FCA7D1E19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m in Sources */,
 				1F6A758319A23EE60002214F /* main.m in Sources */,
+				1FCA7D0E19AB672500EDD2C5 /* AWNTabBarController.m in Sources */,
 				1F6A758719A23EE60002214F /* AWNAppDelegate.m in Sources */,
+				1FCA7D1419AB672D00EDD2C5 /* AWNContextObjectTableViewController.m in Sources */,
+				1FCA7D1819AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
