@@ -10,17 +10,6 @@
 #import <ContextHub/ContextHub.h>
 
 /**
- Geofence rows
- */
-typedef NS_ENUM(NSInteger, AWNGeofenceRow) {
-    AWNGeofenceCreateRow = 0,
-    AWNGoefenceTaggedRow,
-    AWNGeofenceFindRow,
-    AWNGeofenceUpdateRow,
-    AWNGeofenceDeleteRow
-};
-
-/**
  Geofence event types
  */
 typedef NS_ENUM(NSInteger, AWNGeofenceEventType) {
@@ -36,15 +25,6 @@ typedef NS_ENUM(NSInteger, AWNGeofenceEventType) {
 @end
 
 @implementation AWNGeofenceObjectTableViewController
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 #pragma mark - Helper Methods
 
@@ -84,7 +64,7 @@ typedef NS_ENUM(NSInteger, AWNGeofenceEventType) {
             NSLog(@"Successfully triggered 'geofence_event' event type: %@", [self stringFromEventType:row]);
         } else {
             NSLog(@"Failed to trigger event");
-            [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:@"Error triggering event" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil] show];
+            [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:@"Error triggering 'geofence_event' event" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil] show];
         }
     }];
     

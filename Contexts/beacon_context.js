@@ -25,75 +25,92 @@ if (eventType == awnBeaconEventType.CREATE) {
 } else if (eventType == awnBeaconEventType.TAGGED) {
     // beacon.tagged
     var beaconFoundByTag = beacon.tagged("beacon-tag")
-    var beaconID = beaconFoundByTag[0].id
     
-    if (beaconID) {
-        console.log("Listing data from first beacon with tag 'beacon-tag'")
-        console.log("Found by 'beacon-tag' beacon id: " + beaconFoundByTag[0].id)
-        console.log("Found by 'beacon-tag' beacon name: " + beaconFoundByTag[0].name)
-        console.log("Found by 'beacon-tag' beacon UUID: " + beaconFoundByTag[0].uuid)
-        console.log("Found by 'beacon-tag' beacon major: " + beaconFoundByTag[0].major)
-        console.log("Found by 'beacon-tag' beacon minor: " + beaconFoundByTag[0].minor)
-        console.log("Found by 'beacon-tag' beacon tags: " + beaconFoundByTag[0].tags)
+    if (beaconFoundByTag.length > 0) {
+        var beaconID = beaconFoundByTag[0].id
+        
+        if (beaconID) {
+            console.log("Listing data from first beacon with tag 'beacon-tag'")
+            console.log("Found by 'beacon-tag' beacon id: " + beaconFoundByTag[0].id)
+            console.log("Found by 'beacon-tag' beacon name: " + beaconFoundByTag[0].name)
+            console.log("Found by 'beacon-tag' beacon UUID: " + beaconFoundByTag[0].uuid)
+            console.log("Found by 'beacon-tag' beacon major: " + beaconFoundByTag[0].major)
+            console.log("Found by 'beacon-tag' beacon minor: " + beaconFoundByTag[0].minor)
+            console.log("Found by 'beacon-tag' beacon tags: " + beaconFoundByTag[0].tags)
+        } else {
+            console.log("No beacon found with tag 'beacon-tag'")
+        }
     } else {
         console.log("No beacon found with tag 'beacon-tag'")
     }
 } else if (eventType == awnBeaconEventType.FIND) {
     // beacon.find
     var beaconFoundByTag = beacon.tagged("beacon-tag")
-    var beaconID = beaconFoundByTag[0].id
     
-    // This example uses beacon.tagged to find an ID, but in a real-world app, it could be found in beacon_in/beacon_out events at event.data.beacon.id or in the payload of a custom event
-    var beaconFoundByID = beacon.find(beaconID)
-    
-    if (beaconFoundByID) {
-        console.log("Listing data from beacon with id: " + beaconID)
-        console.log("Found by 'ID' beacon name: " + beaconFoundByID.name)
-        console.log("Found by 'ID' beacon UUID: " + beaconFoundByID.uuid)
-        console.log("Found by 'ID' beacon major: " + beaconFoundByID.major)
-        console.log("Found by 'ID' beacon minor: " + beaconFoundByID.minor)
-        console.log("Found by 'ID' beacon tags: " + beaconFoundByID.tags)
+    if (beaconFoundByTag.length > 0) {
+        var beaconID = beaconFoundByTag[0].id
+        
+        // This example uses beacon.tagged to find an ID, but in a real-world app, it could be found in beacon_in/beacon_out events at event.data.beacon.id or in the payload of a custom event
+        var beaconFoundByID = beacon.find(beaconID)
+        
+        if (beaconFoundByID) {
+            console.log("Listing data from beacon with id: " + beaconID)
+            console.log("Found by 'ID' beacon name: " + beaconFoundByID.name)
+            console.log("Found by 'ID' beacon UUID: " + beaconFoundByID.uuid)
+            console.log("Found by 'ID' beacon major: " + beaconFoundByID.major)
+            console.log("Found by 'ID' beacon minor: " + beaconFoundByID.minor)
+            console.log("Found by 'ID' beacon tags: " + beaconFoundByID.tags)
+        } else {
+            console.log("No beacon found with id '" + beaconID + "'")
+        }
     } else {
-        console.log("No beacon found with id '" + beaconID + "'")
+        console.log("Could not find any beacons to find")
     }
 } else if (eventType == awnBeaconEventType.UPDATE) {
     // beacon.update
     var beaconFoundByTag = beacon.tagged("beacon-tag")
-    var beaconID = beaconFoundByTag[0].id
     
-    // This example uses beacon.tagged to find an ID, but in a real-world app, it could be found in beacon_in/beacon_out events at event.data.beacon.id or in the payload of a custom event
-    var beaconFoundByID = beacon.find(beaconID)
-    
-    if (beaconFoundByID) {
-        var updatedBeacon = {}
-        var updatedRandomNum = Math.floor((Math.random() * 100) + 1); // Random num between 1 and 100
-        updatedBeacon.name = "Update beacon #" + updatedRandomNum
-        updatedBeacon.uuid = "E004D972-7BB7-47C8-9DCE-E091CB103500"
-        updatedBeacon.major = Math.floor((Math.random() * 65534) + 1);
-        updatedBeacon.minor = Math.floor((Math.random() * 65534) + 1);
-        updatedBeaconTags = "beacon-tag,beacon2-tag"
-        beacon.update(beaconID, JSON.stringify(updatedBeacon), updatedBeaconTags)
+    if (beaconFoundByTag.length > 0) {
+        var beaconID = beaconFoundByTag[0].id
         
-        var updatedBeaconFoundByID = beacon.find(beaconID)
-        console.log("Listing data from updated beacon")
-        console.log("Updated beacon id: " + beaconID)
-        console.log("Updated beacon name: " + updatedBeaconFoundByID.name)
-        console.log("Updated beacon UUID: " + updatedBeaconFoundByID.uuid)
-        console.log("Updated beacon major: " + updatedBeaconFoundByID.major)
-        console.log("Updated beacon minor: " + updatedBeaconFoundByID.minor)
-        console.log("Updated beacon tags: " + updatedBeaconFoundByID.tags)
+        // This example uses beacon.tagged to find an ID, but in a real-world app, it could be found in beacon_in/beacon_out events at event.data.beacon.id or in the payload of a custom event
+        var beaconFoundByID = beacon.find(beaconID)
+        
+        if (beaconFoundByID) {
+            var updatedBeacon = {}
+            var updatedRandomNum = Math.floor((Math.random() * 100) + 1); // Random num between 1 and 100
+            updatedBeacon.name = "Update beacon #" + updatedRandomNum
+            updatedBeacon.uuid = "E004D972-7BB7-47C8-9DCE-E091CB103500"
+            updatedBeacon.major = Math.floor((Math.random() * 65534) + 1);
+            updatedBeacon.minor = Math.floor((Math.random() * 65534) + 1);
+            updatedBeaconTags = "beacon-tag,beacon2-tag"
+            beacon.update(beaconID, JSON.stringify(updatedBeacon), updatedBeaconTags)
+            
+            var updatedBeaconFoundByID = beacon.find(beaconID)
+            console.log("Listing data from updated beacon")
+            console.log("Updated beacon id: " + beaconID)
+            console.log("Updated beacon name: " + updatedBeaconFoundByID.name)
+            console.log("Updated beacon UUID: " + updatedBeaconFoundByID.uuid)
+            console.log("Updated beacon major: " + updatedBeaconFoundByID.major)
+            console.log("Updated beacon minor: " + updatedBeaconFoundByID.minor)
+            console.log("Updated beacon tags: " + updatedBeaconFoundByID.tags)
+        } else {
+            console.log("No beacon found with id '" + beaconID + "'")
+        }
     } else {
-        console.log("No beacon found with id '" + beaconID + "'")
+        console.log("Could not find beacon to update")
     }
 } else if (eventType == awnBeaconEventType.DESTROY) {
     // beacon.destroy
     // This example uses beacon.tagged to find an ID, but in a real-world app, it could be found in beacon_in/beacon_out events at event.data.beacon.id or in the payload of a custom event
     var beaconFoundByTag = beacon.tagged("beacon-tag")
-    var beaconID = beaconFoundByTag[0].id
     
-    if (beaconID) {
+    if (beaconFoundByTag.length > 0) {
+        var beaconID = beaconFoundByTag[0].id
+        
         beacon.destroy(beaconID)
+        console.log("Deleted beacon with id: " + beaconID)
     } else {
-        console.log("No beacon found with id '" + beaconID + "'")
+        console.log("Could not find beacon to delete")
     }
 }

@@ -24,6 +24,7 @@
 		1F6A759219A23EE60002214F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757A19A23EE60002214F /* UIKit.framework */; };
 		1F6A759A19A23EE70002214F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A759819A23EE70002214F /* InfoPlist.strings */; };
 		1F6A759C19A23EE70002214F /* AwarenessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A759B19A23EE70002214F /* AwarenessTests.m */; };
+		1F702B3519AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F702B3419AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m */; };
 		1FCA7D0419AB662900EDD2C5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA7D0319AB662900EDD2C5 /* CoreMotion.framework */; };
 		1FCA7D0619AB663100EDD2C5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA7D0519AB663100EDD2C5 /* MobileCoreServices.framework */; };
 		1FCA7D0819AB663700EDD2C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA7D0719AB663700EDD2C5 /* CoreLocation.framework */; };
@@ -32,6 +33,7 @@
 		1FCA7D1419AB672D00EDD2C5 /* AWNContextObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1219AB672D00EDD2C5 /* AWNContextObjectTableViewController.m */; };
 		1FCA7D1819AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1719AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m */; };
 		1FCA7D1E19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1C19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m */; };
+		1FCA7D2119ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D2019ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		1F6A759719A23EE70002214F /* AwarenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwarenessTests-Info.plist"; sourceTree = "<group>"; };
 		1F6A759919A23EE70002214F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F6A759B19A23EE70002214F /* AwarenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwarenessTests.m; sourceTree = "<group>"; };
+		1F702B3319AD0C9A00ABDB0D /* AWNPushObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNPushObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNPushObjectTableViewController.h"; sourceTree = "<group>"; };
+		1F702B3419AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNPushObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNPushObjectTableViewController.m"; sourceTree = "<group>"; };
 		1FCA7D0319AB662900EDD2C5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		1FCA7D0519AB663100EDD2C5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1FCA7D0719AB663700EDD2C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -87,6 +91,8 @@
 		1FCA7D1719AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNBeaconObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNBeaconObjectTableViewController.m"; sourceTree = "<group>"; };
 		1FCA7D1C19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNGeofenceObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNGeofenceObjectTableViewController.m"; sourceTree = "<group>"; };
 		1FCA7D1D19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNGeofenceObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNGeofenceObjectTableViewController.h"; sourceTree = "<group>"; };
+		1FCA7D1F19ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNVaultObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNVaultObjectTableViewController.h"; sourceTree = "<group>"; };
+		1FCA7D2019ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNVaultObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNVaultObjectTableViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +181,8 @@
 				1F6A758619A23EE60002214F /* AWNAppDelegate.m */,
 				1F1BC48B19A289D300C70582 /* AWNConstants.h */,
 				1F6A758819A23EE60002214F /* Images.xcassets */,
-				1F6A757D19A23EE60002214F /* Supporting Files */,
 				1F1BC48C19A28A7900C70582 /* Main_iPhone.storyboard */,
+				1F6A757D19A23EE60002214F /* Supporting Files */,
 			);
 			path = Awareness;
 			sourceTree = "<group>";
@@ -257,6 +263,10 @@
 				1FCA7D1719AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m */,
 				1FCA7D1D19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.h */,
 				1FCA7D1C19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m */,
+				1F702B3319AD0C9A00ABDB0D /* AWNPushObjectTableViewController.h */,
+				1F702B3419AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m */,
+				1FCA7D1F19ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.h */,
+				1FCA7D2019ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m */,
 			);
 			name = "Context Objects";
 			sourceTree = "<group>";
@@ -311,6 +321,7 @@
 				ORGANIZATIONNAME = ChaiOne;
 				TargetAttributes = {
 					1F6A757219A23EE60002214F = {
+						DevelopmentTeam = G54H62625F;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -391,7 +402,9 @@
 				1FCA7D0E19AB672500EDD2C5 /* AWNTabBarController.m in Sources */,
 				1F6A758719A23EE60002214F /* AWNAppDelegate.m in Sources */,
 				1FCA7D1419AB672D00EDD2C5 /* AWNContextObjectTableViewController.m in Sources */,
+				1FCA7D2119ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m in Sources */,
 				1FCA7D1819AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m in Sources */,
+				1F702B3519AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Jeff/Documents/Development/ChaiOne/ContextHub/Samples/awareness,
@@ -528,6 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Jeff/Documents/Development/ChaiOne/ContextHub/Samples/awareness,
