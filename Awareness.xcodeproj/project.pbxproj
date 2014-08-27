@@ -78,6 +78,7 @@
 		1F6A759B19A23EE70002214F /* AwarenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwarenessTests.m; sourceTree = "<group>"; };
 		1F702B3319AD0C9A00ABDB0D /* AWNPushObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNPushObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNPushObjectTableViewController.h"; sourceTree = "<group>"; };
 		1F702B3419AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNPushObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNPushObjectTableViewController.m"; sourceTree = "<group>"; };
+		1F8BFB5419AE3ED1008314F1 /* tick_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = tick_context.js; path = Contexts/tick_context.js; sourceTree = "<group>"; };
 		1FCA7D0319AB662900EDD2C5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		1FCA7D0519AB663100EDD2C5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1FCA7D0719AB663700EDD2C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -225,6 +226,7 @@
 				1F52B86D19A24FE900B9C7CA /* geofence_context.js */,
 				1F52B86E19A24FE900B9C7CA /* http_context.js */,
 				1F52B86F19A24FE900B9C7CA /* push_context.js */,
+				1F8BFB5419AE3ED1008314F1 /* tick_context.js */,
 				1F52B87019A24FE900B9C7CA /* vault_context.js */,
 			);
 			name = Contexts;
