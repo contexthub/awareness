@@ -68,19 +68,26 @@
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
     
-    // Define our fetch completion handler which is called by ContextHub if the push wasn't a push for CCHSubscriptionService
+    // Define our fetch completion handler which is called by ContextHub if the push wasn't a push for ContextHub
     void (^fetchCompletionHandler)(UIBackgroundFetchResult) = ^(UIBackgroundFetchResult result){
         NSLog(@"Push received: %@", userInfo);
-        NSString *message = [userInfo valueForKeyPath:@"aps.alert"];
-        NSDictionary *customPayload = [userInfo valueForKey:@"payload"];
         BOOL background = ([userInfo valueForKeyPath:@"aps.content-available"] != nil) ? YES : NO;
         
-        // Pop an alert about our message only if our app is in the foreground and push wasn't from background
-        if (application.applicationState == UIApplicationStateActive && !background) {
-            [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
+        // Pop an alert about our message only if our app is in the foreground
+        if (application.applicationState == UIApplicationStateActive) {
+            if (!background) {
+                // Foreground has a message
+                NSString *message = [userInfo valueForKeyPath:@"aps.alert"];
+                [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
+            } else {
+                // Background has payload data
+                NSDictionary *customPayload = [userInfo valueForKey:@"payload"];
+                NSString *customPayloadString = [NSString stringWithFormat:@"Custom payload: %@", customPayload];
+                [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:customPayloadString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
+            }
         }
         
-        // Call the completionhandler based on whether your push resulted in data or not
+        // Call the completionhandler with a result based on whether your push had new data or not
         completionHandler(UIBackgroundFetchResultNewData);
     };
     

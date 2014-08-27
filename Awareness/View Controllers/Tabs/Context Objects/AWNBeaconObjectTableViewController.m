@@ -54,7 +54,7 @@ typedef NS_ENUM(NSInteger, AWNBeaconEventType) {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger row = indexPath.row;
-    NSString *eventType =  [NSString stringWithFormat:@"%d", row];
+    NSString *eventType =  [NSString stringWithFormat:@"%d", (int)row];
     
     // Trigger the event in ContextHub
     NSDictionary *beaconEvent = @{@"name": @"beacon_event", @"data": @{ @"event_type": eventType } };

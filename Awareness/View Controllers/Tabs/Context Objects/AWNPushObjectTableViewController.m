@@ -83,11 +83,11 @@ typedef NS_ENUM(NSInteger, AWNPushMode) {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger row = indexPath.row;
-    NSString *eventType = [NSString stringWithFormat:@"%d", row];
+    NSString *eventType = [NSString stringWithFormat:@"%d", (int)row];
     AWNPushMode pushMode = self.backgroundSwitch.on ? AWNPushModeBackground : AWNPushModeForeground;
     
     // Trigger the event in ContextHub
-    NSDictionary *pushEvent = @{@"name": @"push_event", @"data": @{ @"event_type": eventType, @"push_mode":[NSString stringWithFormat:@"%d", pushMode] } };
+    NSDictionary *pushEvent = @{@"name": @"push_event", @"data": @{ @"event_type": eventType, @"push_mode":[NSString stringWithFormat:@"%d", (int)pushMode] } };
     [[CCHSensorPipeline sharedInstance] triggerEvent:pushEvent completionHandler:^(NSError *error) {
         
         if(!error) {

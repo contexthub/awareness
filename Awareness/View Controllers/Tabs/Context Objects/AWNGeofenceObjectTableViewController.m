@@ -54,7 +54,7 @@ typedef NS_ENUM(NSInteger, AWNGeofenceEventType) {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger row = indexPath.row;
-    NSString *eventType =  [NSString stringWithFormat:@"%d", row];
+    NSString *eventType =  [NSString stringWithFormat:@"%d", (int)row];
     
     // Trigger the event in ContextHub
     NSDictionary *geofenceEvent = @{@"name": @"geofence_event", @"data": @{ @"event_type": eventType } };
