@@ -53,14 +53,15 @@ if (eventType == awnBeaconEventType.CREATE) {
         // This example uses beacon.tagged to find an ID, but in a real-world app, it could be found in beacon_in/beacon_out events at event.data.beacon.id or in the payload of a custom event
         var beaconFoundByID = beacon.find(beaconID)
         
+        var beaconFoundByID = beacon.find(beaconID)
+        
         if (beaconFoundByID) {
             console.log("Listing data from beacon with id: " + beaconID)
             console.log("Found by 'ID' beacon name: " + beaconFoundByID.name)
             console.log("Found by 'ID' beacon UUID: " + beaconFoundByID.uuid)
             console.log("Found by 'ID' beacon major: " + beaconFoundByID.major)
             console.log("Found by 'ID' beacon minor: " + beaconFoundByID.minor)
-            console.log("Found by 'ID' beacon tags: " + beaconFoundByID.tags)
-        } else {
+            console.log("Found by 'ID' beacon tags: " + beaconFoundByID.tags) else {
             console.log("No beacon found with id '" + beaconID + "'")
         }
     } else {
