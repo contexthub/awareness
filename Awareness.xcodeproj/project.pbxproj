@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F1BC48D19A28A7900C70582 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1BC48C19A28A7900C70582 /* Main_iPhone.storyboard */; };
-		1F52B86519A24C4D00B9C7CA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86219A24C4D00B9C7CA /* LICENSE */; };
-		1F52B86619A24C4D00B9C7CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86319A24C4D00B9C7CA /* README.md */; };
-		1F52B86719A24C4D00B9C7CA /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86419A24C4D00B9C7CA /* release_notes.md */; };
 		1F52B86919A24C5900B9C7CA /* ContextHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F52B86819A24C5900B9C7CA /* ContextHub.framework */; };
 		1F6A757719A23EE60002214F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757619A23EE60002214F /* Foundation.framework */; };
 		1F6A757919A23EE60002214F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757819A23EE60002214F /* CoreGraphics.framework */; };
@@ -53,13 +50,13 @@
 		1F52B86319A24C4D00B9C7CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1F52B86419A24C4D00B9C7CA /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		1F52B86819A24C5900B9C7CA /* ContextHub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextHub.framework; sourceTree = "<group>"; };
-		1F52B86A19A24FE900B9C7CA /* beacon_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = beacon_context.js; path = Contexts/beacon_context.js; sourceTree = "<group>"; };
-		1F52B86B19A24FE900B9C7CA /* console_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = console_context.js; path = Contexts/console_context.js; sourceTree = "<group>"; };
-		1F52B86C19A24FE900B9C7CA /* event_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = event_context.js; path = Contexts/event_context.js; sourceTree = "<group>"; };
-		1F52B86D19A24FE900B9C7CA /* geofence_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = geofence_context.js; path = Contexts/geofence_context.js; sourceTree = "<group>"; };
-		1F52B86E19A24FE900B9C7CA /* http_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = http_context.js; path = Contexts/http_context.js; sourceTree = "<group>"; };
-		1F52B86F19A24FE900B9C7CA /* push_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = push_context.js; path = Contexts/push_context.js; sourceTree = "<group>"; };
-		1F52B87019A24FE900B9C7CA /* vault_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = vault_context.js; path = Contexts/vault_context.js; sourceTree = "<group>"; };
+		1F52B86A19A24FE900B9C7CA /* beacon_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = beacon_event.js; path = Contexts/beacon_event.js; sourceTree = "<group>"; };
+		1F52B86B19A24FE900B9C7CA /* console_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = console_event.js; path = Contexts/console_event.js; sourceTree = "<group>"; };
+		1F52B86C19A24FE900B9C7CA /* event_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = event_event.js; path = Contexts/event_event.js; sourceTree = "<group>"; };
+		1F52B86D19A24FE900B9C7CA /* geofence_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = geofence_event.js; path = Contexts/geofence_event.js; sourceTree = "<group>"; };
+		1F52B86E19A24FE900B9C7CA /* http_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = http_event.js; path = Contexts/http_event.js; sourceTree = "<group>"; };
+		1F52B86F19A24FE900B9C7CA /* push_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = push_event.js; path = Contexts/push_event.js; sourceTree = "<group>"; };
+		1F52B87019A24FE900B9C7CA /* vault_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = vault_event.js; path = Contexts/vault_event.js; sourceTree = "<group>"; };
 		1F6A757319A23EE60002214F /* Awareness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Awareness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6A757619A23EE60002214F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F6A757819A23EE60002214F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,7 +75,7 @@
 		1F6A759B19A23EE70002214F /* AwarenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwarenessTests.m; sourceTree = "<group>"; };
 		1F702B3319AD0C9A00ABDB0D /* AWNPushObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNPushObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNPushObjectTableViewController.h"; sourceTree = "<group>"; };
 		1F702B3419AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNPushObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNPushObjectTableViewController.m"; sourceTree = "<group>"; };
-		1F8BFB5419AE3ED1008314F1 /* tick_context.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = tick_context.js; path = Contexts/tick_context.js; sourceTree = "<group>"; };
+		1F8BFB5419AE3ED1008314F1 /* tick.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = tick.js; path = Contexts/tick.js; sourceTree = "<group>"; };
 		1FCA7D0319AB662900EDD2C5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		1FCA7D0519AB663100EDD2C5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1FCA7D0719AB663700EDD2C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -142,6 +139,7 @@
 				1F6A75AD19A2486C0002214F /* Contexts */,
 				1F6A757519A23EE60002214F /* Frameworks */,
 				1F6A757419A23EE60002214F /* Products */,
+				1F8BFB5519AE55AC008314F1 /* README */,
 				1F52B86319A24C4D00B9C7CA /* README.md */,
 				1F52B86419A24C4D00B9C7CA /* release_notes.md */,
 				1F52B86219A24C4D00B9C7CA /* LICENSE */,
@@ -220,16 +218,23 @@
 		1F6A75AD19A2486C0002214F /* Contexts */ = {
 			isa = PBXGroup;
 			children = (
-				1F52B86A19A24FE900B9C7CA /* beacon_context.js */,
-				1F52B86B19A24FE900B9C7CA /* console_context.js */,
-				1F52B86C19A24FE900B9C7CA /* event_context.js */,
-				1F52B86D19A24FE900B9C7CA /* geofence_context.js */,
-				1F52B86E19A24FE900B9C7CA /* http_context.js */,
-				1F52B86F19A24FE900B9C7CA /* push_context.js */,
-				1F8BFB5419AE3ED1008314F1 /* tick_context.js */,
-				1F52B87019A24FE900B9C7CA /* vault_context.js */,
+				1F52B86A19A24FE900B9C7CA /* beacon_event.js */,
+				1F52B86B19A24FE900B9C7CA /* console_event.js */,
+				1F52B86C19A24FE900B9C7CA /* event_event.js */,
+				1F52B86D19A24FE900B9C7CA /* geofence_event.js */,
+				1F52B86E19A24FE900B9C7CA /* http_event.js */,
+				1F52B86F19A24FE900B9C7CA /* push_event.js */,
+				1F8BFB5419AE3ED1008314F1 /* tick.js */,
+				1F52B87019A24FE900B9C7CA /* vault_event.js */,
 			);
 			name = Contexts;
+			sourceTree = "<group>";
+		};
+		1F8BFB5519AE55AC008314F1 /* README */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = README;
 			sourceTree = "<group>";
 		};
 		1FCA7D0919AB664500EDD2C5 /* Views */ = {
@@ -358,12 +363,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F52B86519A24C4D00B9C7CA /* LICENSE in Resources */,
 				1F6A758119A23EE60002214F /* InfoPlist.strings in Resources */,
 				1F1BC48D19A28A7900C70582 /* Main_iPhone.storyboard in Resources */,
-				1F52B86619A24C4D00B9C7CA /* README.md in Resources */,
 				1F6A758919A23EE60002214F /* Images.xcassets in Resources */,
-				1F52B86719A24C4D00B9C7CA /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

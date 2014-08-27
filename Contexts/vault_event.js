@@ -32,7 +32,7 @@ if (eventType == awnVaultEventType.CREATE) {
     if (vaultFoundByTag.length > 0) {
         var vaultID = vaultFoundByTag[0].vault_info.id
         
-        console.log("Listing data from first beacon with tag 'vault-tag'")
+        console.log("Listing data from first vault item with tag 'vault-tag'")
         console.log("Found by 'vault-tag' vault name: " + vaultFoundByTag[0].data.name)
         console.log("Found by 'vault-tag' vault id: " + vaultID)
         console.log("Found by 'vault-tag' vault currentPosition: " + vaultFoundByTag[0].data.currentPosition)
