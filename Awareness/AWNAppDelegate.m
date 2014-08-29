@@ -70,7 +70,9 @@
     
     // Define our fetch completion handler which is called by ContextHub if the push wasn't a push for ContextHub
     void (^fetchCompletionHandler)(UIBackgroundFetchResult) = ^(UIBackgroundFetchResult result){
+        // Log pushes we get
         NSLog(@"Push received: %@", userInfo);
+        
         BOOL background = ([userInfo valueForKeyPath:@"aps.content-available"] != nil) ? YES : NO;
         
         // Pop an alert about our message only if our app is in the foreground
