@@ -1,6 +1,6 @@
 # Push Documentation
 
-## This README goes into detail of how to use the push object in a context rule
+##### This README goes into detail of how to use the push object in a context rule
 
 ### Table of Contents
 

@@ -1,6 +1,6 @@
 # Console Documentation
 
-## This documentation file demonstrates how to use the console object in a context rule
+##### This documentation file demonstrates how to use the console object in a context rule
 
 ### Table of Contents
 

@@ -1,6 +1,6 @@
 # Vault Documentation
 
-## This documentation file demonstrates how to use the vault object in a context rule
+##### This documentation file demonstrates how to use the vault object in a context rule
 
 ### Table of Contents
 

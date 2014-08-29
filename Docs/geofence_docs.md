@@ -1,6 +1,6 @@
 # Beacon Documentation
 
-## This README goes into detail of how to use the geofence object in a context rule
+##### This README goes into detail of how to use the geofence object in a context rule
 
 ### Table of Contents
 
