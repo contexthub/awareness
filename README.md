@@ -11,7 +11,7 @@ The Awareness sample app introduces you to the contextual rule features of the C
 5. **[Setting Up Context Rules](#creating-a-new-context)**
 6. **[Triggering a Context](#triggering-a-context)**
 7. **[Testing a Context](#testing-a-context)**
-8. **[Special Context Rule - Tick](#special-context-rule-tick)
+8. **[Special Context Rule - Tick](#special-context-rule-tick)**
 9. **[Sample Code](#sample-code)**
 10. **[Usage](#usage)**
 11. **[Final Words](#final-words)**
