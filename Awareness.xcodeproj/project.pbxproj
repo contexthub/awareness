@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F52B86519A24C4D00B9C7CA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86219A24C4D00B9C7CA /* LICENSE */; };
-		1F52B86619A24C4D00B9C7CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86319A24C4D00B9C7CA /* README.md */; };
-		1F52B86719A24C4D00B9C7CA /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F52B86419A24C4D00B9C7CA /* release_notes.md */; };
+		1F1BC48D19A28A7900C70582 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1BC48C19A28A7900C70582 /* Main_iPhone.storyboard */; };
 		1F52B86919A24C5900B9C7CA /* ContextHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F52B86819A24C5900B9C7CA /* ContextHub.framework */; };
 		1F6A757719A23EE60002214F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757619A23EE60002214F /* Foundation.framework */; };
 		1F6A757919A23EE60002214F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757819A23EE60002214F /* CoreGraphics.framework */; };
@@ -23,6 +21,16 @@
 		1F6A759219A23EE60002214F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6A757A19A23EE60002214F /* UIKit.framework */; };
 		1F6A759A19A23EE70002214F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A759819A23EE70002214F /* InfoPlist.strings */; };
 		1F6A759C19A23EE70002214F /* AwarenessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A759B19A23EE70002214F /* AwarenessTests.m */; };
+		1F702B3519AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F702B3419AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m */; };
+		1FCA7D0419AB662900EDD2C5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA7D0319AB662900EDD2C5 /* CoreMotion.framework */; };
+		1FCA7D0619AB663100EDD2C5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA7D0519AB663100EDD2C5 /* MobileCoreServices.framework */; };
+		1FCA7D0819AB663700EDD2C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA7D0719AB663700EDD2C5 /* CoreLocation.framework */; };
+		1FCA7D0E19AB672500EDD2C5 /* AWNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D0D19AB672500EDD2C5 /* AWNTabBarController.m */; };
+		1FCA7D1319AB672D00EDD2C5 /* AWNAboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1019AB672D00EDD2C5 /* AWNAboutTableViewController.m */; };
+		1FCA7D1419AB672D00EDD2C5 /* AWNContextObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1219AB672D00EDD2C5 /* AWNContextObjectTableViewController.m */; };
+		1FCA7D1819AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1719AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m */; };
+		1FCA7D1E19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1C19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m */; };
+		1FCA7D2119ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D2019ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +44,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F1BC48B19A289D300C70582 /* AWNConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWNConstants.h; sourceTree = "<group>"; };
+		1F1BC48C19A28A7900C70582 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		1F4F537C19B0B2F2006EEF8F /* beacon_docs.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = beacon_docs.md; path = Docs/beacon_docs.md; sourceTree = "<group>"; };
+		1F4F537D19B0B2F2006EEF8F /* console_docs.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = console_docs.md; path = Docs/console_docs.md; sourceTree = "<group>"; };
+		1F4F537E19B0B2F2006EEF8F /* event_docs.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = event_docs.md; path = Docs/event_docs.md; sourceTree = "<group>"; };
+		1F4F537F19B0B2F2006EEF8F /* geofence_docs.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = geofence_docs.md; path = Docs/geofence_docs.md; sourceTree = "<group>"; };
+		1F4F538019B0B2F2006EEF8F /* http_docs.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = http_docs.md; path = Docs/http_docs.md; sourceTree = "<group>"; };
+		1F4F538119B0B2F2006EEF8F /* push_docs.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = push_docs.md; path = Docs/push_docs.md; sourceTree = "<group>"; };
+		1F4F538219B0B2F2006EEF8F /* tick_docs.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = tick_docs.md; path = Docs/tick_docs.md; sourceTree = "<group>"; };
+		1F4F538319B0B2F2006EEF8F /* vault_docs.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = vault_docs.md; path = Docs/vault_docs.md; sourceTree = "<group>"; };
 		1F52B86219A24C4D00B9C7CA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1F52B86319A24C4D00B9C7CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1F52B86419A24C4D00B9C7CA /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		1F52B86819A24C5900B9C7CA /* ContextHub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ContextHub.framework; sourceTree = "<group>"; };
+		1F52B86A19A24FE900B9C7CA /* beacon_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = beacon_event.js; path = Contexts/beacon_event.js; sourceTree = "<group>"; };
+		1F52B86B19A24FE900B9C7CA /* console_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = console_event.js; path = Contexts/console_event.js; sourceTree = "<group>"; };
+		1F52B86C19A24FE900B9C7CA /* event_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = event_event.js; path = Contexts/event_event.js; sourceTree = "<group>"; };
+		1F52B86D19A24FE900B9C7CA /* geofence_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = geofence_event.js; path = Contexts/geofence_event.js; sourceTree = "<group>"; };
+		1F52B86E19A24FE900B9C7CA /* http_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = http_event.js; path = Contexts/http_event.js; sourceTree = "<group>"; };
+		1F52B86F19A24FE900B9C7CA /* push_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = push_event.js; path = Contexts/push_event.js; sourceTree = "<group>"; };
+		1F52B87019A24FE900B9C7CA /* vault_event.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = vault_event.js; path = Contexts/vault_event.js; sourceTree = "<group>"; };
 		1F6A757319A23EE60002214F /* Awareness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Awareness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6A757619A23EE60002214F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F6A757819A23EE60002214F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +81,24 @@
 		1F6A759719A23EE70002214F /* AwarenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwarenessTests-Info.plist"; sourceTree = "<group>"; };
 		1F6A759919A23EE70002214F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F6A759B19A23EE70002214F /* AwarenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwarenessTests.m; sourceTree = "<group>"; };
+		1F702B3319AD0C9A00ABDB0D /* AWNPushObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNPushObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNPushObjectTableViewController.h"; sourceTree = "<group>"; };
+		1F702B3419AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNPushObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNPushObjectTableViewController.m"; sourceTree = "<group>"; };
+		1F8BFB5419AE3ED1008314F1 /* tick.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = tick.js; path = Contexts/tick.js; sourceTree = "<group>"; };
+		1FCA7D0319AB662900EDD2C5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1FCA7D0519AB663100EDD2C5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1FCA7D0719AB663700EDD2C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1FCA7D0C19AB672500EDD2C5 /* AWNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNTabBarController.h; path = "View Controllers/AWNTabBarController.h"; sourceTree = "<group>"; };
+		1FCA7D0D19AB672500EDD2C5 /* AWNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNTabBarController.m; path = "View Controllers/AWNTabBarController.m"; sourceTree = "<group>"; };
+		1FCA7D0F19AB672D00EDD2C5 /* AWNAboutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNAboutTableViewController.h; path = "View Controllers/Tabs/AWNAboutTableViewController.h"; sourceTree = "<group>"; };
+		1FCA7D1019AB672D00EDD2C5 /* AWNAboutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNAboutTableViewController.m; path = "View Controllers/Tabs/AWNAboutTableViewController.m"; sourceTree = "<group>"; };
+		1FCA7D1119AB672D00EDD2C5 /* AWNContextObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNContextObjectTableViewController.h; path = "View Controllers/Tabs/AWNContextObjectTableViewController.h"; sourceTree = "<group>"; };
+		1FCA7D1219AB672D00EDD2C5 /* AWNContextObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNContextObjectTableViewController.m; path = "View Controllers/Tabs/AWNContextObjectTableViewController.m"; sourceTree = "<group>"; };
+		1FCA7D1619AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNBeaconObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNBeaconObjectTableViewController.h"; sourceTree = "<group>"; };
+		1FCA7D1719AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNBeaconObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNBeaconObjectTableViewController.m"; sourceTree = "<group>"; };
+		1FCA7D1C19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNGeofenceObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNGeofenceObjectTableViewController.m"; sourceTree = "<group>"; };
+		1FCA7D1D19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNGeofenceObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNGeofenceObjectTableViewController.h"; sourceTree = "<group>"; };
+		1FCA7D1F19ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNVaultObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNVaultObjectTableViewController.h"; sourceTree = "<group>"; };
+		1FCA7D2019ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNVaultObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNVaultObjectTableViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCA7D0819AB663700EDD2C5 /* CoreLocation.framework in Frameworks */,
+				1FCA7D0619AB663100EDD2C5 /* MobileCoreServices.framework in Frameworks */,
+				1FCA7D0419AB662900EDD2C5 /* CoreMotion.framework in Frameworks */,
 				1F52B86919A24C5900B9C7CA /* ContextHub.framework in Frameworks */,
 				1F6A757919A23EE60002214F /* CoreGraphics.framework in Frameworks */,
 				1F6A757B19A23EE60002214F /* UIKit.framework in Frameworks */,
@@ -83,12 +129,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1BC48E19A28AA100C70582 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA7D0B19AB671C00EDD2C5 /* Tabs */,
+				1FCA7D0C19AB672500EDD2C5 /* AWNTabBarController.h */,
+				1FCA7D0D19AB672500EDD2C5 /* AWNTabBarController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		1F6A756A19A23EE60002214F = {
 			isa = PBXGroup;
 			children = (
 				1F6A757C19A23EE60002214F /* Awareness */,
 				1F6A759519A23EE60002214F /* AwarenessTests */,
 				1F6A75AD19A2486C0002214F /* Contexts */,
+				1F8BFB5519AE55AC008314F1 /* Docs */,
 				1F6A757519A23EE60002214F /* Frameworks */,
 				1F6A757419A23EE60002214F /* Products */,
 				1F52B86319A24C4D00B9C7CA /* README.md */,
@@ -111,7 +168,10 @@
 			children = (
 				1F52B86819A24C5900B9C7CA /* ContextHub.framework */,
 				1F6A757819A23EE60002214F /* CoreGraphics.framework */,
+				1FCA7D0719AB663700EDD2C5 /* CoreLocation.framework */,
+				1FCA7D0319AB662900EDD2C5 /* CoreMotion.framework */,
 				1F6A757619A23EE60002214F /* Foundation.framework */,
+				1FCA7D0519AB663100EDD2C5 /* MobileCoreServices.framework */,
 				1F6A757A19A23EE60002214F /* UIKit.framework */,
 				1F6A758F19A23EE60002214F /* XCTest.framework */,
 			);
@@ -121,9 +181,14 @@
 		1F6A757C19A23EE60002214F /* Awareness */ = {
 			isa = PBXGroup;
 			children = (
+				1FCA7D0A19AB664A00EDD2C5 /* Models */,
+				1FCA7D0919AB664500EDD2C5 /* Views */,
+				1F1BC48E19A28AA100C70582 /* View Controllers */,
 				1F6A758519A23EE60002214F /* AWNAppDelegate.h */,
 				1F6A758619A23EE60002214F /* AWNAppDelegate.m */,
+				1F1BC48B19A289D300C70582 /* AWNConstants.h */,
 				1F6A758819A23EE60002214F /* Images.xcassets */,
+				1F1BC48C19A28A7900C70582 /* Main_iPhone.storyboard */,
 				1F6A757D19A23EE60002214F /* Supporting Files */,
 			);
 			path = Awareness;
@@ -161,8 +226,72 @@
 		1F6A75AD19A2486C0002214F /* Contexts */ = {
 			isa = PBXGroup;
 			children = (
+				1F52B86A19A24FE900B9C7CA /* beacon_event.js */,
+				1F52B86B19A24FE900B9C7CA /* console_event.js */,
+				1F52B86C19A24FE900B9C7CA /* event_event.js */,
+				1F52B86D19A24FE900B9C7CA /* geofence_event.js */,
+				1F52B86E19A24FE900B9C7CA /* http_event.js */,
+				1F52B86F19A24FE900B9C7CA /* push_event.js */,
+				1F8BFB5419AE3ED1008314F1 /* tick.js */,
+				1F52B87019A24FE900B9C7CA /* vault_event.js */,
 			);
 			name = Contexts;
+			sourceTree = "<group>";
+		};
+		1F8BFB5519AE55AC008314F1 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				1F4F537E19B0B2F2006EEF8F /* event_docs.md */,
+				1F4F537D19B0B2F2006EEF8F /* console_docs.md */,
+				1F4F537C19B0B2F2006EEF8F /* beacon_docs.md */,
+				1F4F537F19B0B2F2006EEF8F /* geofence_docs.md */,
+				1F4F538119B0B2F2006EEF8F /* push_docs.md */,
+				1F4F538319B0B2F2006EEF8F /* vault_docs.md */,
+				1F4F538019B0B2F2006EEF8F /* http_docs.md */,
+				1F4F538219B0B2F2006EEF8F /* tick_docs.md */,
+			);
+			name = Docs;
+			sourceTree = "<group>";
+		};
+		1FCA7D0919AB664500EDD2C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1FCA7D0A19AB664A00EDD2C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1FCA7D0B19AB671C00EDD2C5 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA7D1519AB75E000EDD2C5 /* Context Objects */,
+				1FCA7D0F19AB672D00EDD2C5 /* AWNAboutTableViewController.h */,
+				1FCA7D1019AB672D00EDD2C5 /* AWNAboutTableViewController.m */,
+				1FCA7D1119AB672D00EDD2C5 /* AWNContextObjectTableViewController.h */,
+				1FCA7D1219AB672D00EDD2C5 /* AWNContextObjectTableViewController.m */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		1FCA7D1519AB75E000EDD2C5 /* Context Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA7D1619AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.h */,
+				1FCA7D1719AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m */,
+				1FCA7D1D19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.h */,
+				1FCA7D1C19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m */,
+				1F702B3319AD0C9A00ABDB0D /* AWNPushObjectTableViewController.h */,
+				1F702B3419AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m */,
+				1FCA7D1F19ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.h */,
+				1FCA7D2019ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m */,
+			);
+			name = "Context Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +343,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = ChaiOne;
 				TargetAttributes = {
+					1F6A757219A23EE60002214F = {
+						DevelopmentTeam = G54H62625F;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					1F6A758D19A23EE60002214F = {
 						TestTargetID = 1F6A757219A23EE60002214F;
 					};
@@ -242,11 +379,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F52B86519A24C4D00B9C7CA /* LICENSE in Resources */,
 				1F6A758119A23EE60002214F /* InfoPlist.strings in Resources */,
-				1F52B86619A24C4D00B9C7CA /* README.md in Resources */,
+				1F1BC48D19A28A7900C70582 /* Main_iPhone.storyboard in Resources */,
 				1F6A758919A23EE60002214F /* Images.xcassets in Resources */,
-				1F52B86719A24C4D00B9C7CA /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +416,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCA7D1319AB672D00EDD2C5 /* AWNAboutTableViewController.m in Sources */,
+				1FCA7D1E19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m in Sources */,
 				1F6A758319A23EE60002214F /* main.m in Sources */,
+				1FCA7D0E19AB672500EDD2C5 /* AWNTabBarController.m in Sources */,
 				1F6A758719A23EE60002214F /* AWNAppDelegate.m in Sources */,
+				1FCA7D1419AB672D00EDD2C5 /* AWNContextObjectTableViewController.m in Sources */,
+				1FCA7D2119ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m in Sources */,
+				1FCA7D1819AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m in Sources */,
+				1F702B3519AD0C9A00ABDB0D /* AWNPushObjectTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Jeff/Documents/Development/ChaiOne/ContextHub/Samples/awareness,
@@ -419,6 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Jeff/Documents/Development/ChaiOne/ContextHub/Samples/awareness,
