@@ -15,9 +15,9 @@
 // Creating a geofence
 var newGeofence = {}
 newGeofence.name = "New geofence"
-newGeofence.latitude = 29
-newGeofence.longitude = -95
-newGeofence.radius = 500
+newGeofence.latitude = 29.763638
+newGeofence.longitude = -95.461873
+newGeofence.radius = 250
 newGeofence.tags = "geofence-tag"
 geofence.create(newGeofence.tags, newGeofence.name, newGeofence.latitude, newGeofence.longitude, newGeofence.radius)
 ```
@@ -46,7 +46,7 @@ if (geofencesFoundByTag > 0) {
 var geofenceID = 1500
 var geofenceFoundbyID = geofence.find(geofenceID)
         
-if (beaconFoundByID) {
+if (geofenceFoundbyID) {
     console.log("Found by 'geofence-tag' geofence name: " + geofenceFoundbyID.name)
     console.log("Found by 'geofence-tag' geofence latitude: " + geofenceFoundbyID.latitude)
     console.log("Found by 'geofence-tag' geofence longitude: " + geofenceFoundbyID.longitude)
@@ -61,8 +61,8 @@ if (beaconFoundByID) {
 var geofenceID = 1500
 var updatedGeofence = {}
 updatedGeofence.name = "Updated geofence"
-updatedGeofence.latitude = -28
-updatedGeofence.longitude = 90
+updatedGeofence.latitude = 23.54590
+updatedGeofence.longitude = -98.461873
 updatedGeofence.radius = 1000
 updatedGeofenceTags = "geofence-tag,geofence2-tag"
 geofence.update(geofenceID, JSON.stringify(updatedGeofence), updatedGeofenceTags)

@@ -70,27 +70,35 @@
     
     // Define our fetch completion handler which is called by ContextHub if the push wasn't a push for ContextHub
     void (^fetchCompletionHandler)(UIBackgroundFetchResult) = ^(UIBackgroundFetchResult result){
-        // Log pushes we get
-        NSLog(@"Push received: %@", userInfo);
         
-        BOOL background = ([userInfo valueForKeyPath:@"aps.content-available"] != nil) ? YES : NO;
-        
-        // Pop an alert about our message only if our app is in the foreground
-        if (application.applicationState == UIApplicationStateActive) {
-            if (!background) {
-                // Foreground has a message
-                NSString *message = [userInfo valueForKeyPath:@"aps.alert"];
-                [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
-            } else {
-                // Background has payload data
-                NSDictionary *customPayload = [userInfo valueForKey:@"payload"];
-                NSString *customPayloadString = [NSString stringWithFormat:@"Custom payload: %@", customPayload];
-                [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:customPayloadString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
+        if ([userInfo valueForKey:@"context-hub"]) {
+            // vault item was update
+            
+            completionHandler (result);
+        } else {
+            // A push I meant to send
+            
+            // Log pushes we get
+            NSLog(@"Push received: %@", userInfo);
+            
+            BOOL background = ([userInfo valueForKeyPath:@"aps.content-available"] != nil) ? YES : NO;
+            
+            // Pop an alert about our message only if our app is in the foreground
+            if (application.applicationState == UIApplicationStateActive) {
+                if (!background) {
+                    // Foreground has a message
+                    NSString *message = [userInfo valueForKeyPath:@"aps.alert"];
+                    [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
+                } else {
+                    // Background has payload data
+                    NSDictionary *customPayload = [userInfo valueForKey:@"payload"];
+                    NSString *customPayloadString = [NSString stringWithFormat:@"Custom payload: %@", customPayload];
+                    [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:customPayloadString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
+                }
             }
+            // Call the completionhandler with a result based on whether your push had new data or not
+            completionHandler(UIBackgroundFetchResultNewData);
         }
-        
-        // Call the completionhandler with a result based on whether your push had new data or not
-        completionHandler(UIBackgroundFetchResultNewData);
     };
     
     // Let ContextHub process the push
