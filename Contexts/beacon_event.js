@@ -61,7 +61,9 @@ if (eventType == awnBeaconEventType.CREATE) {
             console.log("Found by 'ID' beacon UUID: " + beaconFoundByID.uuid)
             console.log("Found by 'ID' beacon major: " + beaconFoundByID.major)
             console.log("Found by 'ID' beacon minor: " + beaconFoundByID.minor)
-            console.log("Found by 'ID' beacon tags: " + beaconFoundByID.tags) else {
+            console.log("Found by 'ID' beacon tags: " + beaconFoundByID.tags)
+        }
+        else {
             console.log("No beacon found with id '" + beaconID + "'")
         }
     } else {

@@ -62,8 +62,20 @@ The "tick" context is a special contextual rule that automatically gets fired on
 In this sample, each view controller calls `{[CCHSensorPipeline sharedInstance] triggerEvent:]` with custom data to trigger a custom event to be fired in ContextHub, which when paired with a matching context rule with the same event type, causes that context rule to be evaluated. Events fired in this manner have a data field filled with your JSON-serializable data structure, along with the usual context package detailing information about the device which generated the event. A context rule is then evaluated with either a `true` indicating everything worked ok or an error message if the rule was written incorrectly.
 
 ## Usage
+Below is the code used to trigger a custom event in ContextHub, which then triggers a context rule to be evaluated on the server:
+```
+NSDictionary *event = @{"name":@"custom_event", @"data":@{ @"temperature":@"97", @"humidity":@"30"}};
+[[CCHSensorPipeline sharedInstance] triggerEvent:event completionHandler:^(NSError *error) {
 
-Here are links to specific documentation that demonstrates how to use each of the objects in a context rule:
+if (!error) {
+NSLog(@"Successfully triggered custom event");
+} else {
+NSLog(@"Failed to trigger event");
+}
+}];
+```
+
+Then, here are links to specific documentation that demonstrates how to use each of the objects in a context rule:
 
 - **[Events](/Docs/event_docs.md)**
 - **[Console](/Docs/console_docs.md)**

@@ -99,6 +99,7 @@
 		1FCA7D1D19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNGeofenceObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNGeofenceObjectTableViewController.h"; sourceTree = "<group>"; };
 		1FCA7D1F19ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNVaultObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNVaultObjectTableViewController.h"; sourceTree = "<group>"; };
 		1FCA7D2019ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNVaultObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNVaultObjectTableViewController.m"; sourceTree = "<group>"; };
+		1FDE969E19BA64A700A59A4F /* README_subscriptions.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README_subscriptions.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +150,7 @@
 				1F6A757519A23EE60002214F /* Frameworks */,
 				1F6A757419A23EE60002214F /* Products */,
 				1F52B86319A24C4D00B9C7CA /* README.md */,
+				1FDE969E19BA64A700A59A4F /* README_subscriptions.md */,
 				1F52B86419A24C4D00B9C7CA /* release_notes.md */,
 				1F52B86219A24C4D00B9C7CA /* LICENSE */,
 			);
@@ -187,8 +189,8 @@
 				1F6A758519A23EE60002214F /* AWNAppDelegate.h */,
 				1F6A758619A23EE60002214F /* AWNAppDelegate.m */,
 				1F1BC48B19A289D300C70582 /* AWNConstants.h */,
-				1F6A758819A23EE60002214F /* Images.xcassets */,
 				1F1BC48C19A28A7900C70582 /* Main_iPhone.storyboard */,
+				1F6A758819A23EE60002214F /* Images.xcassets */,
 				1F6A757D19A23EE60002214F /* Supporting Files */,
 			);
 			path = Awareness;

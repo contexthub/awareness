@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, AWNHTTPEventType) {
 @implementation AWNContextObjectTableViewController
 
 - (void)viewDidLoad {
-#ifdef TARGET_IPHONE_SIMULATOR
+#if TARGET_IPHONE_SIMULATOR
      // Pop a notification that some features of this sample app only work on actual devices
      [[[UIAlertView alloc] initWithTitle:@"Important!" message:@"Some features of this sample app (receiving push notifications) will only work using a real iOS device." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
 #endif
