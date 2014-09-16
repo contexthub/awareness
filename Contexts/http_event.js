@@ -22,3 +22,5 @@ if (eventType == awnHTTPEventType.GET) {
     http.post(url, JSON.stringify(body), JSON.stringify(headers))
     console.log("HTTP POST webhook fired")
 }
+
+// Inspect the results of these 2 HTTP GET and POST requests by going to http://requestb.in/vx1hdkvx?inspect
