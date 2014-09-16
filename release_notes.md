@@ -1,6 +1,9 @@
 # Awareness (Context Rule) Sample App Release Notes
 ---
 
+## v1.0.2 (Build 83) - September 16, 2014
+- Fix crashing bug when launching app on pre-iOS 8 device
+
 ## v1.0.1 (Build 82) - September 16, 2014
 - Update to ContextHub v1.3.1 framework
 - Update compatibility for iOS 8 
