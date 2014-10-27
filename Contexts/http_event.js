@@ -23,3 +23,4 @@ if (eventType == awnHTTPEventType.GET) {
 }
 
 // Inspect the results of these 2 HTTP GET and POST requests by going to http://requestb.in/, generating a URL and placing it in the var url up above
+// URL is only good for up to 48 hours
