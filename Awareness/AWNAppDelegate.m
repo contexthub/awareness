@@ -100,7 +100,7 @@
     NSDictionary *object = notification.object;
     NSLog(@"Vault item: %@", object);
     
-    NSString *message = [NSString stringWithFormat:@"A vault item '%@' was created", object[@"name"]];
+    NSString *message = [NSString stringWithFormat:@"A vault item '%@' was created", object[@"data"][@"name"]];
     [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil] show];
 }
 
@@ -108,7 +108,7 @@
     NSDictionary *object = notification.object;
     NSLog(@"Vault item: %@", object);
     
-    NSString *message = [NSString stringWithFormat:@"A vault item '%@' was updated", object[@"name"]];
+    NSString *message = [NSString stringWithFormat:@"A vault item '%@' was updated", object[@"data"][@"name"]];
     [[[UIAlertView alloc] initWithTitle:@"ContextHub" message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil] show];
 }
 
