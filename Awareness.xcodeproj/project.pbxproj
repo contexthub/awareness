@@ -346,7 +346,7 @@
 				ORGANIZATIONNAME = ChaiOne;
 				TargetAttributes = {
 					1F6A757219A23EE60002214F = {
-						DevelopmentTeam = G54H62625F;
+						DevelopmentTeam = K83DSSAEPP;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
