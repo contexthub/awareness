@@ -31,6 +31,7 @@
 		1FCA7D1819AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1719AB762F00EDD2C5 /* AWNBeaconObjectTableViewController.m */; };
 		1FCA7D1E19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D1C19ABA99400EDD2C5 /* AWNGeofenceObjectTableViewController.m */; };
 		1FCA7D2119ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA7D2019ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m */; };
+		1FE0C9EC19FEB1C800704FDD /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE0C9EB19FEB1C800704FDD /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		1FCA7D1F19ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWNVaultObjectTableViewController.h; path = "View Controllers/Tabs/Context Objects/AWNVaultObjectTableViewController.h"; sourceTree = "<group>"; };
 		1FCA7D2019ABC5F200EDD2C5 /* AWNVaultObjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWNVaultObjectTableViewController.m; path = "View Controllers/Tabs/Context Objects/AWNVaultObjectTableViewController.m"; sourceTree = "<group>"; };
 		1FDE969E19BA64A700A59A4F /* README_subscriptions.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README_subscriptions.md; sourceTree = "<group>"; };
+		1FE0C9EB19FEB1C800704FDD /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				1F6A758619A23EE60002214F /* AWNAppDelegate.m */,
 				1F1BC48B19A289D300C70582 /* AWNConstants.h */,
 				1F1BC48C19A28A7900C70582 /* Main_iPhone.storyboard */,
+				1FE0C9EB19FEB1C800704FDD /* Launch Screen.xib */,
 				1F6A758819A23EE60002214F /* Images.xcassets */,
 				1F6A757D19A23EE60002214F /* Supporting Files */,
 			);
@@ -382,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6A758119A23EE60002214F /* InfoPlist.strings in Resources */,
+				1FE0C9EC19FEB1C800704FDD /* Launch Screen.xib in Resources */,
 				1F1BC48D19A28A7900C70582 /* Main_iPhone.storyboard in Resources */,
 				1F6A758919A23EE60002214F /* Images.xcassets in Resources */,
 			);
