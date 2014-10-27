@@ -1,7 +1,7 @@
 # Awareness (Context Rule) Sample App Release Notes
 ---
 
-## v1.0.3 (Build xx) - October 27, 2014
+## v1.0.3 (Build 89) - October 27, 2014
 - Update to ContextHub v1.3.4 framework
 - Update compatibility with iPhone 6 and 6 Plus
 
