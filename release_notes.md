@@ -4,6 +4,7 @@
 ## v1.0.3 (Build 89) - October 27, 2014
 - Update to ContextHub v1.3.4 framework
 - Update compatibility with iPhone 6 and 6 Plus
+- Fix bug where pushes would be sent to incorrect devices if there were multiple devices with valid push tokens in ContextHub
 
 ## v1.0.2 (Build 83) - September 16, 2014
 - Fix crashing bug when launching app on pre-iOS 8 device

@@ -19,32 +19,26 @@ pushContextRule = function() {
     
     var eventType = event.data.event_type
     var pushMode = event.data.push_mode
+    var deviceId = event.data.device_id
     
     // This context uses the devices object to grab a necessary token, deviceID, alias, and tags
-    var devices = device.tagged("device-tag")
+    var devices = device.findById(deviceId)
     var validDevice = { }
-    var foundDeviceWithPushToken = false
     
+    // Check and make sure there is a device
     if (devices.length > 0) {
-        
-        // Loop through all devices until we find one with a valid push token (not null)
-        for (var i = 0; i < devices.length; i++) {
-            validDevice = devices[i]
-            
-            if (validDevice.push_token != null) {
-                foundDeviceWithPushToken = true
-                break;
-            }
-        }
-    } else {
-        // There are no devices at all
-        console.log("No devices in ContextHub")
+        validDevice = devices[0]
+    }
+    
+    if (validDevice == null) {
+        // There isn't a device with that ID
+        console.log("Could not find device with ID " + deviceId + "in ContextHub")
         return false
     }
     
-    if (!foundDeviceWithPushToken) {
+    if (validDevice.push_token == null) {
         // There were no devices with push tokens
-        console.log("No devices with valid push tokens found")
+        console.log("Device with ID " + deviceId + " does not have a valid push token")
         return false
     }
     
