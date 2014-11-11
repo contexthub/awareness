@@ -87,7 +87,7 @@ typedef NS_ENUM(NSInteger, AWNPushMode) {
     AWNPushMode pushMode = self.backgroundSwitch.on ? AWNPushModeBackground : AWNPushModeForeground;
     
     // Trigger the event in ContextHub
-    NSDictionary *pushEvent = @{@"name": @"push_event", @"data": @{ @"event_type": eventType, @"push_mode":[NSString stringWithFormat:@"%d", (int)pushMode] } };
+    NSDictionary *pushEvent = @{@"name": @"push_event", @"data": @{ @"event_type": eventType, @"push_mode":[NSString stringWithFormat:@"%d", (int)pushMode], @"device_id":[ContextHub deviceId] } };
     [[CCHSensorPipeline sharedInstance] triggerEvent:pushEvent completionHandler:^(NSError *error) {
         
         if(!error) {

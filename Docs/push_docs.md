@@ -13,7 +13,7 @@
 var token = "71962e3cbc7dfa91e8bec21b532b69c211a55453a1407299bb78f931c7e8f7ec"
 var deviceId = "BC903204-51C1-4DF6-92E8-F5A5DE00E26E"
 var alias = "Jeff's iPhone 5"
-var arrayOfTags = = new Array()
+var arrayOfTags = new Array()
 arrayOfTags.push("device-tag")
 
 // Sending foreground push via token
@@ -35,7 +35,7 @@ push.sendToTags(arrayOfTags, "Sending message using tags")
 var token = "71962e3cbc7dfa91e8bec21b532b69c211a55453a1407299bb78f931c7e8f7ec"
 var deviceId = "BC903204-51C1-4DF6-92E8-F5A5DE00E26E"
 var alias = "Jeff's iPhone 5"
-var arrayOfTags = = new Array()
+var arrayOfTags = new Array()
 arrayOfTags.push("device-tag")
 
 var data = { "payload": {"age": "25", "height": "6.25"} }
